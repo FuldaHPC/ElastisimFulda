@@ -1,0 +1,22 @@
+{
+  "cluster_name": "Synthetic eight-node example",
+  "num_nodes": 8,
+  "cluster_flops": 8000000000.0,
+  "flops_per_node": 1000000000.0,
+  "cpus_per_node": 1,
+  "cores_per_cpu": 1,
+  "cores_per_node": 1,
+  "cpu_power_idle": 10,
+  "cpu_power_peak": 20,
+  "cpu_power_boot": 12,
+  "cpu_power_shutdown": 8,
+  "cpu_power_off": 0,
+  "node_power_without_cpus_idle": 2,
+  "node_power_without_cpus_peak": 2,
+  "node_power_without_cpus_boot": 2,
+  "node_power_without_cpus_shutdown": 2,
+  "node_power_without_cpus_off": 1,
+  "efficiency_time_window_start": 0,
+  "efficiency_time_window_end": 3600,
+  "notes": "Synthetic values for a local example; not measurements from a real cluster."
+}

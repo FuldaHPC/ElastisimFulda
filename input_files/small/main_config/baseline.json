@@ -1,0 +1,31 @@
+{
+  "scheduling_interval": 1,
+  "min_scheduling_interval": 1,
+  "schedule_on_job_submit": true,
+  "schedule_on_job_finalize": true,
+  "schedule_on_reconfiguration": true,
+  "schedule_on_scheduling_point": false,
+  "allow_oversubscription": false,
+  "clip_evolving_requests": true,
+  "sensing": true,
+  "sensing_interval": 1,
+  "pfs_read_links": [
+    "PFS_read"
+  ],
+  "pfs_write_links": [
+    "PFS_write"
+  ],
+  "jobs_file": "../jobs.json",
+  "platform_file": "../crossbar.xml",
+  "shutdown_policy_file": "../policies/baseline.json",
+  "job_statistics": "job_statistics.csv",
+  "cpu_utilization": "cpu_utilization.csv",
+  "node_utilization": "node_utilization.csv",
+  "network_activity": "network_activity.csv",
+  "pfs_utilization": "pfs_utilization.csv",
+  "gpu_utilization": "gpu_utilization.csv",
+  "event_log": "event.csv",
+  "use_native_scheduler": true,
+  "enable_scheduling_point_fast_path": true,
+  "show_progress_bar": false
+}

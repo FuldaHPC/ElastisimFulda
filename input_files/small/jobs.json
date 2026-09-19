@@ -1,0 +1,95 @@
+{
+    "jobs_generated": 4,
+    "simulation_time": 7200,
+    "simulation_time (in days)": 0.08333333333333333,
+    "total_job_time": 36.5,
+    "total_job_time_percent": 0.5069444444444444,
+    "flops_per_node": 1000000000.0,
+    "num_cluster_nodes": 8,
+    "runtime_prediction_scaling_formula": "(1/((1-parallel_percentage)+parallel_percentage/num_nodes))",
+    "generation values": "{'seed': 'S0', 'type_probabilities': {'RIGID': 50, 'MOLDABLE': 0, 'MALLEABLE': 50}, 'malleable_dividation_amount': 0.0, 'dividation_split_time': 1.0, 'application_model': 'application_model.json', 'parallel_percentage': [0.95], 'min_node_efficiency_threshold': 0.95, 'pref_node_efficiency_threshold': 0.8, 'max_node_efficiency_threshold': 0.5, 'min_scheduling_interval': 1.0, 'scaling_formula': '(1/((1-parallel_percentage)+parallel_percentage/num_nodes))', 'runtime_prediction_scaling_formula': '(1/((1-parallel_percentage)+parallel_percentage/num_nodes))', 'penalty_formula': '0', 'walltime_alpha': 1.1}",
+    "jobs": [
+        {
+            "type": "RIGID",
+            "submit_time": 0,
+            "num_nodes": 2,
+            "application_model": "application_model.json",
+            "arguments": {
+                "divide": 1,
+                "parallel_percentage": 0.95,
+                "flops": 16000000000.0,
+                "timelimit": 20,
+                "num_nodes_pref": 2,
+                "id": 0
+            },
+            "attributes": {
+                "csv_id": 1,
+                "kassel_penalty_function": "0",
+                "predicted_runtime": 8,
+                "prediction_base_nodes": 2
+            }
+        },
+        {
+            "type": "MALLEABLE",
+            "submit_time": 4,
+            "num_nodes_min": 1,
+            "num_nodes_max": 8,
+            "application_model": "application_model.json",
+            "arguments": {
+                "divide": 40.0,
+                "parallel_percentage": 0.95,
+                "flops": 160000000000.0,
+                "timelimit": 120,
+                "num_nodes_pref": 4,
+                "id": 1
+            },
+            "attributes": {
+                "csv_id": 2,
+                "kassel_penalty_function": "0",
+                "predicted_runtime": 47,
+                "prediction_base_nodes": 4
+            }
+        },
+        {
+            "type": "MALLEABLE",
+            "submit_time": 20,
+            "num_nodes_min": 1,
+            "num_nodes_max": 8,
+            "application_model": "application_model.json",
+            "arguments": {
+                "divide": 18.0,
+                "parallel_percentage": 0.95,
+                "flops": 36000000000.0,
+                "timelimit": 50,
+                "num_nodes_pref": 2,
+                "id": 2
+            },
+            "attributes": {
+                "csv_id": 3,
+                "kassel_penalty_function": "0",
+                "predicted_runtime": 20,
+                "prediction_base_nodes": 2
+            }
+        },
+        {
+            "type": "RIGID",
+            "submit_time": 3600,
+            "num_nodes": 8,
+            "application_model": "application_model.json",
+            "arguments": {
+                "divide": 1,
+                "parallel_percentage": 0.95,
+                "flops": 80000000000.0,
+                "timelimit": 30,
+                "num_nodes_pref": 8,
+                "id": 3
+            },
+            "attributes": {
+                "csv_id": 6,
+                "kassel_penalty_function": "0",
+                "predicted_runtime": 11,
+                "prediction_base_nodes": 8
+            }
+        }
+    ]
+}

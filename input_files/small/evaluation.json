@@ -1,0 +1,9 @@
+{
+  "wait_threshold_s": 2,
+  "grid_cost_usd_per_kwh": 0.18,
+  "solar_cost_usd_per_kwh": 0.06,
+  "solar_peak_kw": 0,
+  "solar_sunrise_hour": 6,
+  "solar_sunset_hour": 22,
+  "solar_night_fraction": 0.001
+}

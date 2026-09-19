@@ -1,0 +1,15 @@
+{
+    "phases": [
+        {
+            "iterations": "divide",
+            "tasks": [
+                {
+                    "type": "cpu",
+                    "name": "Compute",
+                    "flops": "(flops/divide)/(1/((1-parallel_percentage)+parallel_percentage/num_nodes))",
+                    "computation_pattern": "UNIFORM"
+                }
+            ]
+        }
+    ]
+}

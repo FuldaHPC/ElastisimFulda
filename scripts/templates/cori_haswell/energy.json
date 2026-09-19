@@ -1,0 +1,38 @@
+{
+  "cluster_name": "Cori Haswell",
+  "cluster_type": "NERSC Cray XC40",
+  "cpu_model": "Intel Xeon E5-2698 v3 (Haswell)",
+  "cpu_cores_per_socket": 16,
+  "cpu_frequency_ghz": 2.3,
+  
+  "cpu_power_idle": 68,
+  "cpu_power_peak": 135,
+  "cpu_power_boot": 72,
+  "cpu_power_shutdown": 56,
+  "cpu_power_off": 0,
+
+  "node_power_without_cpus_idle": 54,
+  "node_power_without_cpus_peak": 92,
+  "node_power_without_cpus_boot": 57,
+  "node_power_without_cpus_shutdown": 44,
+  "node_power_without_cpus_off": 5,
+  
+  "cpus_per_node": 2,
+  "cores_per_cpu": 16,
+  "cores_per_node": 32,
+  "num_nodes": 2388,
+  
+  "ram_per_node_gb": 128,
+  "ram_type": "DDR4-2133",
+  "interconnect": "Cray XC40 Aries (Dragonfly)",
+
+
+
+  "cluster_flops": 2.81e15,
+  "flops_per_node": 1.177e12,
+
+  "efficiency_time_window_start": 43200,
+  "efficiency_time_window_end": 400000,
+  
+  "notes": "Power values as used in the paper."
+}

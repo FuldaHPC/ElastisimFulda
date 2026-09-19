@@ -1,0 +1,38 @@
+{
+  "cluster_name": "Cori KNL",
+  "cluster_type": "NERSC Cray XC40",
+  "cpu_model": "Intel Xeon Phi 7250 (Knights Landing)",
+  "cpu_cores_per_socket": 68,
+  "cpu_frequency_ghz": 1.4,
+  
+  "cpu_power_idle": 125,
+  "cpu_power_peak": 215,
+  "cpu_power_boot": 133,
+  "cpu_power_shutdown": 102,
+  "cpu_power_off": 0,
+
+  "node_power_without_cpus_idle": 43,
+  "node_power_without_cpus_peak": 73,
+  "node_power_without_cpus_boot": 46,
+  "node_power_without_cpus_shutdown": 35,
+  "node_power_without_cpus_off": 5,
+  
+  "cpus_per_node": 1,
+  "cores_per_cpu": 68,
+  "cores_per_node": 272,
+  "num_nodes": 9688,
+  
+  "ram_per_node_gb": 96,
+  "ram_type": "DDR4-2400",
+  "mcdram_per_node_gb": 16,
+  "mcdram_type": "HBM on-package",
+  "interconnect": "Cray XC40 Aries (Dragonfly)",
+  
+  "cluster_flops": 2.95e16,
+  "flops_per_node": 3.045e12,
+
+  "efficiency_time_window_start": 65000,
+  "efficiency_time_window_end": 425000,
+  
+  "notes": "Power values as used in the paper."
+}

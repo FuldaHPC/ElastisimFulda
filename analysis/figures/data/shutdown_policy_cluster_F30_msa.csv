@@ -1,0 +1,7 @@
+x,y,xlow,xhigh,ylow,yhigh,color_rgb,label,metric,cluster,value
+1,2,0.52,1.48,1.54,2.46,12050120,97.7\\char37{},mean_on_util_percent,cori_haswell,97.7356254653
+1,1,0.52,1.48,0.54,1.46,11459521,0.06h,node_overrun_normalized_hours_per_window,cori_haswell,0.0568122247038
+2,2,1.52,2.48,1.54,2.46,11656387,98.7\\char37{},mean_on_util_percent,cori_knl,98.7034979796
+2,1,1.52,2.48,0.54,1.46,14873065,0.52h,node_overrun_normalized_hours_per_window,cori_knl,0.51944626036
+3,2,2.52,3.48,1.54,2.46,12903634,95.7\\char37{},mean_on_util_percent,theta,95.7311482525
+3,1,2.52,3.48,0.54,1.46,16448506,0.73h,node_overrun_normalized_hours_per_window,theta,0.72789940529

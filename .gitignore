@@ -1,0 +1,11 @@
+# Local build products and Python caches
+**/build/
+**/cmake-build-*/
+__pycache__/
+*.py[cod]
+.venv/
+*.log
+*.ipc
+core
+core.*
+.vscode/

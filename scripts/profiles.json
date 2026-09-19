@@ -1,0 +1,122 @@
+{
+  "cori_haswell": {
+    "input_filename": "11-07-22_to_11-11-22_clean.csv",
+    "parameters": {
+      "time_window": "2022-11-07_00:00:00,2022-11-11_23:59:59",
+      "num_cluster_nodes": 2388,
+      "cluster_flops": 2810000000000000.0,
+      "node_divide_amount": 1,
+      "malleable_dividation_amount": 0,
+      "dividation_split_time": 1,
+      "min_scheduling_interval": 1,
+      "parallel_percentage": "0.999,0.995,0.99,0.985,0.98,0.975,0.97,0.965,0.96,0.955,0.95",
+      "scaling_formula": "(1/((1-parallel_percentage)+parallel_percentage/num_nodes))",
+      "runtime_prediction_scaling_formula": "(1/((1-parallel_percentage)+parallel_percentage/num_nodes))",
+      "min_node_efficiency_threshold": 0.95,
+      "pref_node_efficiency_threshold": 0.8,
+      "max_node_efficiency_threshold": 0.5,
+      "penalty_formula": "0",
+      "walltime_alpha": 1.1,
+      "application_model": "application_model.json"
+    },
+    "evaluation": {
+      "wait_threshold_s": 2,
+      "grid_cost_usd_per_kwh": 0.18,
+      "solar_cost_usd_per_kwh": 0.06,
+      "solar_peak_kw": 250,
+      "solar_sunrise_hour": 6,
+      "solar_sunset_hour": 22,
+      "solar_night_fraction": 0.001
+    }
+  },
+  "cori_knl": {
+    "input_filename": "11-07-22_to_11-11-22_clean.csv",
+    "parameters": {
+      "time_window": "2022-11-06_00:00:00,2022-11-11_23:59:59",
+      "num_cluster_nodes": 9688,
+      "cluster_flops": 2.95e+16,
+      "node_divide_amount": 1,
+      "malleable_dividation_amount": 0,
+      "dividation_split_time": 1,
+      "min_scheduling_interval": 1,
+      "parallel_percentage": "0.999,0.995,0.99,0.985,0.98,0.975,0.97,0.965,0.96,0.955,0.95",
+      "scaling_formula": "(1/((1-parallel_percentage)+parallel_percentage/num_nodes))",
+      "runtime_prediction_scaling_formula": "(1/((1-parallel_percentage)+parallel_percentage/num_nodes))",
+      "min_node_efficiency_threshold": 0.95,
+      "pref_node_efficiency_threshold": 0.8,
+      "max_node_efficiency_threshold": 0.5,
+      "penalty_formula": "0",
+      "walltime_alpha": 1.1,
+      "application_model": "application_model.json"
+    },
+    "evaluation": {
+      "wait_threshold_s": 2,
+      "grid_cost_usd_per_kwh": 0.18,
+      "solar_cost_usd_per_kwh": 0.06,
+      "solar_peak_kw": 850,
+      "solar_sunrise_hour": 6,
+      "solar_sunset_hour": 22,
+      "solar_night_fraction": 0.001
+    }
+  },
+  "theta": {
+    "input_filename": "ANL-ALCF-DJC-THETA_20230101_20231231.csv",
+    "parameters": {
+      "time_window": "2023-01-12_00:00:00,2023-01-25_23:59:59",
+      "num_cluster_nodes": 4392,
+      "cluster_flops": 1.17e+16,
+      "node_divide_amount": 1,
+      "malleable_dividation_amount": 0,
+      "dividation_split_time": 1,
+      "min_scheduling_interval": 1,
+      "parallel_percentage": "0.999,0.995,0.99,0.985,0.98,0.975,0.97,0.965,0.96,0.955,0.95",
+      "scaling_formula": "(1/((1-parallel_percentage)+parallel_percentage/num_nodes))",
+      "runtime_prediction_scaling_formula": "(1/((1-parallel_percentage)+parallel_percentage/num_nodes))",
+      "min_node_efficiency_threshold": 0.95,
+      "pref_node_efficiency_threshold": 0.8,
+      "max_node_efficiency_threshold": 0.5,
+      "penalty_formula": "0",
+      "walltime_alpha": 1.1,
+      "application_model": "application_model.json"
+    },
+    "evaluation": {
+      "wait_threshold_s": 20,
+      "grid_cost_usd_per_kwh": 0.15,
+      "solar_cost_usd_per_kwh": 0.06,
+      "solar_peak_kw": 400,
+      "solar_sunrise_hour": 6,
+      "solar_sunset_hour": 22,
+      "solar_night_fraction": 0.001
+    }
+  },
+  "small": {
+    "input_filename": "source.csv",
+    "parameters": {
+      "time_window": "2020-01-01_00:00:00,2020-01-01_02:00:00",
+      "num_cluster_nodes": 8,
+      "cluster_flops": 8000000000.0,
+      "node_divide_amount": 1,
+      "malleable_dividation_amount": 0,
+      "dividation_split_time": 1,
+      "min_scheduling_interval": 1,
+      "parallel_percentage": "0.95",
+      "scaling_formula": "(1/((1-parallel_percentage)+parallel_percentage/num_nodes))",
+      "runtime_prediction_scaling_formula": "(1/((1-parallel_percentage)+parallel_percentage/num_nodes))",
+      "min_node_efficiency_threshold": 0.95,
+      "pref_node_efficiency_threshold": 0.8,
+      "max_node_efficiency_threshold": 0.5,
+      "penalty_formula": "0",
+      "walltime_alpha": 1.1,
+      "application_model": "application_model.json"
+    },
+    "evaluation": {
+      "wait_threshold_s": 2,
+      "grid_cost_usd_per_kwh": 0.18,
+      "solar_cost_usd_per_kwh": 0.06,
+      "solar_peak_kw": 0,
+      "solar_sunrise_hour": 6,
+      "solar_sunset_hour": 22,
+      "solar_night_fraction": 0.001
+    }
+  }
+}

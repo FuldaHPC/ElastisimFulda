@@ -1,0 +1,41 @@
+{
+  "cluster": "small",
+  "seed": "S0",
+  "malleable_share": 50,
+  "input_filename": "source.csv",
+  "input_sha256": "a664e5ff2a794aaec605c1e3b3694e64f81b7a006fe80b3b38b28a0bceb4de7c",
+  "parameters": {
+    "time_window": "2020-01-01_00:00:00,2020-01-01_02:00:00",
+    "num_cluster_nodes": 8,
+    "cluster_flops": 8000000000.0,
+    "node_divide_amount": 1,
+    "malleable_dividation_amount": 0,
+    "dividation_split_time": 1,
+    "min_scheduling_interval": 1,
+    "parallel_percentage": "0.95",
+    "scaling_formula": "(1/((1-parallel_percentage)+parallel_percentage/num_nodes))",
+    "runtime_prediction_scaling_formula": "(1/((1-parallel_percentage)+parallel_percentage/num_nodes))",
+    "min_node_efficiency_threshold": 0.95,
+    "pref_node_efficiency_threshold": 0.8,
+    "max_node_efficiency_threshold": 0.5,
+    "penalty_formula": "0",
+    "walltime_alpha": 1.1,
+    "application_model": "application_model.json",
+    "seed": "S0",
+    "type_probabilities": "50,0,50"
+  },
+  "job_count": 4,
+  "generator": "csv_to_jobs.py",
+  "generator_sha256": "a90e42e6e1888c1e920ea7e046c1c5977a474619ee305aed2f5ee68f9e54f51a",
+  "python_version": "3.12.3",
+  "main_scheduling_interval": 1,
+  "main_min_scheduling_interval": 1,
+  "time_origin": "earliest selected submission is shifted to zero by the retained converter",
+  "template_sha256": {
+    "crossbar.xml": "fc1149f7ea6d8783f37dde3ac0b5b2eafbf58cbb3989496d2fd2968ab65558bd",
+    "energy.json": "27f091f5b649e49895b07b2eecac30273ff112c85db191b7ad62ab2ddaccae37",
+    "main.json": "34c6f93f3e6d07a307e254e82e8b323466b3cbfd4ade70da1e7c8ac676b1ed56",
+    "policies/baseline.json": "199cb2b2bca3caa09227686e4b992d66e999a57062f444365ecb874bfd8e2024",
+    "policies/shutdown.json": "b4c3a6a2ecf40ee950424d0fbaeb7f2d5f78d5a706274749406dd09fabb3e7b4"
+  }
+}

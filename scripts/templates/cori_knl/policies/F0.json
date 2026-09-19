@@ -1,0 +1,41 @@
+{
+  "policy_type": "static",
+  "policy_name": "cori_knl_F0",
+  "description": "Cori KNL baseline: shutdown disabled",
+  "version": "1.0",
+  
+  "shutdown_windows": [
+    {
+      "start_hour": 22,
+      "end_hour": 6,
+      "target_fraction": 0.5,
+      "description": "Disabled: window_start lies beyond the simulated time"
+    }
+  ],
+  
+  "draining_strategy": "simple",
+
+  "timing": {
+    "drain_lead_time": 0,
+    "T_boot": 159,
+    "T_down": 10,
+    "max_drain_duration": 28800
+  },
+  
+  "flags": {
+    "force_clear_on_window_end": true,
+    "job_acceptance_margin": 0,
+    "malleable_shrink_to_target": false,
+    "malleable_shrink_lead_time": 0,
+    "malleable_shrink_priority": "min",
+    "shutdown_target_pool": false
+  },
+  
+  "use_time_window": true,
+  "window_start": 99999999,
+  "window_end": 999999999,
+  
+  "_comments": {
+    "use_case": "Baseline without shutdown: window_start far beyond the simulated time keeps the policy inactive"
+  }
+}

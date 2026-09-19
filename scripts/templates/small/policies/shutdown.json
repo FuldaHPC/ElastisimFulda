@@ -1,0 +1,31 @@
+{
+  "policy_type": "static",
+  "policy_name": "small_shutdown",
+  "description": "Synthetic eight-node shutdown example",
+  "version": "1.0",
+  "shutdown_windows": [
+    {
+      "start_hour": 0,
+      "end_hour": 1,
+      "target_fraction": 0.75
+    }
+  ],
+  "draining_strategy": "simple",
+  "timing": {
+    "drain_lead_time": 0,
+    "T_boot": 5,
+    "T_down": 2,
+    "max_drain_duration": 3600
+  },
+  "flags": {
+    "force_clear_on_window_end": true,
+    "job_acceptance_margin": 0,
+    "malleable_shrink_to_target": true,
+    "malleable_shrink_lead_time": 0,
+    "malleable_shrink_priority": "min",
+    "shutdown_target_pool": true
+  },
+  "use_time_window": true,
+  "window_start": 0,
+  "window_end": 999999999
+}

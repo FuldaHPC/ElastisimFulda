@@ -1,0 +1,47 @@
+{
+  "policy_type": "static",
+  "policy_name": "cori_haswell_F30",
+  "description": "Cori Haswell: 70% of the nodes active at night (22:00 to 06:00), 30% shut down",
+  "version": "1.0",
+  
+  "shutdown_windows": [
+    {
+      "start_hour": 22,
+      "end_hour": 6,
+      "target_fraction": 0.7,
+      "description": "Night window: 70% capacity, 30% shut down"
+    }
+  ],
+  
+  "draining_strategy": "simple",
+
+  "timing": {
+    "drain_lead_time": 0,
+    "T_boot": 159,
+    "T_down": 10,
+    "max_drain_duration": 28800
+  },
+  
+  "flags": {
+    "force_clear_on_window_end": true,
+    "job_acceptance_margin": 0,
+    "malleable_shrink_to_target": true,
+    "malleable_shrink_lead_time": 0,
+    "malleable_shrink_priority": "min",
+    "shutdown_target_pool": true
+  },
+
+  "use_time_window": true,
+  "window_start": 0,
+  "window_end": 999999999,
+  
+  "_comments": {
+    "drain_lead_time": "seconds before the window start at which draining begins",
+    "max_drain_duration": "absolute timeout of the DRAINING state in seconds",
+    "target_fraction": "fraction of the nodes that stays active during the window; the rest is shut down",
+    "malleable_shrink_to_target": "true = shrink malleable jobs on targeted nodes to reach target_fraction",
+    "malleable_shrink_lead_time": "seconds before the window start at which shrinking begins (for example 600 = 10 min)",
+    "malleable_shrink_priority": "min|pref|average (priority order for selecting jobs to shrink)",
+    "shutdown_target_pool": "true = reserve the shutdown subset and keep long jobs off the targeted nodes"
+  }
+}
